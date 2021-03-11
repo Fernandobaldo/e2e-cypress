@@ -51,7 +51,7 @@
             "name": "I define the user role",
             "result": {
               "status": "passed",
-              "duration": 172000000
+              "duration": 166000000
             }
           },
           {
@@ -96,7 +96,7 @@
             "name": "I define travel information",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 16000000
             }
           },
           {
@@ -123,7 +123,7 @@
             "name": "A response with success will return",
             "result": {
               "status": "passed",
-              "duration": 9000000
+              "duration": 7000000
             }
           },
           {
@@ -150,7 +150,7 @@
             "name": "I get the stored travel by id",
             "result": {
               "status": "passed",
-              "duration": 668000000
+              "duration": 322000000
             }
           },
           {
@@ -195,7 +195,7 @@
             "name": "Response should contain a travel with",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 14000000
             }
           }
         ]
@@ -235,7 +235,7 @@
             "name": "I define the user role",
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 100000000
             }
           },
           {
@@ -296,7 +296,7 @@
             "name": "I define the user role",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 92000000
             }
           },
           {
@@ -317,7 +317,7 @@
             "name": "I define the zone",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 33000000
             }
           }
         ]

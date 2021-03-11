@@ -10,7 +10,7 @@ Feature: Get Service - Travel management validation with get
       | dataPartida    | 2021-04-01 |
       | dataRetorno    | 2021-05-01 |
       | localDeDestino | Manaus     |
-      | regiao         | Nortec      |
+      | regiao         | Norte      |
     Then A response with success will return
       | statusCode | 201  |
       | id         | true |
