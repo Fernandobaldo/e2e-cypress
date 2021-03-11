@@ -1,0 +1,305 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Travel Service - Travel management validation",
+    "line": 3,
+    "id": "travel-service---travel-management-validation",
+    "tags": [
+      {
+        "name": "@travel-service",
+        "line": 1
+      },
+      {
+        "name": "@auth-service",
+        "line": 2
+      }
+    ],
+    "uri": "travell-service-validation.feature",
+    "elements": [
+      {
+        "id": "travel-service---travel-management-validation;submit-valid-travel-management",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Submit valid travel management",
+        "tags": [
+          {
+            "name": "@travel-service",
+            "line": 1
+          },
+          {
+            "name": "@auth-service",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "adm"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "acompanhante",
+                      "Thays"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataPartida",
+                      "2021-04-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataRetorno",
+                      "2021-05-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "localDeDestino",
+                      "Manaus"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regiao",
+                      "Norte"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I define travel information",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "201"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "id",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "A response with success will return",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "acompanhante",
+                      "Thays"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataPartida",
+                      "2021-04-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataRetorno",
+                      "2021-05-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "localDeDestino",
+                      "Manaus"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regiao",
+                      "Norte"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Response should contain a travel with",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "travel-service---travel-management-validation;submit-valid-travel-management-with-user-role",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Submit valid travel management with user role",
+        "tags": [
+          {
+            "name": "@travel-service",
+            "line": 1
+          },
+          {
+            "name": "@auth-service",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "user"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "acompanhante",
+                      "Thays"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataPartida",
+                      "2021-04-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataRetorno",
+                      "2021-05-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "localDeDestino",
+                      "Manaus"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regiao",
+                      "Norte"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I define travel information",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "403"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 33,
+            "name": "A response with unsuccess will return",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "message",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 35,
+            "name": "It will returned a message",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

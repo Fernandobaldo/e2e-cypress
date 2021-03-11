@@ -1,0 +1,327 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Get Service - Travel management validation with get",
+    "line": 3,
+    "id": "get-service---travel-management-validation-with-get",
+    "tags": [
+      {
+        "name": "@travel-service",
+        "line": 1
+      },
+      {
+        "name": "@auth-service",
+        "line": 2
+      }
+    ],
+    "uri": "get-service-validation.feature",
+    "elements": [
+      {
+        "id": "get-service---travel-management-validation-with-get;send-get-to-validate-the-scheduled-travel",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Send GET to validate the scheduled travel",
+        "tags": [
+          {
+            "name": "@travel-service",
+            "line": 1
+          },
+          {
+            "name": "@auth-service",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "adm"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "acompanhante",
+                      "Ana Maria"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataPartida",
+                      "2021-04-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataRetorno",
+                      "2021-05-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "localDeDestino",
+                      "Manaus"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regiao",
+                      "Norte"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I define travel information",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "201"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "id",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "A response with success will return",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "user"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "id",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I get the stored travel by id",
+            "result": {
+              "status": "passed",
+              "duration": 668000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "acompanhante",
+                      "Ana Maria"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataPartida",
+                      "2021-04-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "dataRetorno",
+                      "2021-05-01"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "localDeDestino",
+                      "Manaus"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "regiao",
+                      "Norte"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "Response should contain a travel with",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "get-service---travel-management-validation-with-get;send-get-to-validate-all-stored-travel",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Send GET to validate all stored travel",
+        "tags": [
+          {
+            "name": "@travel-service",
+            "line": 1
+          },
+          {
+            "name": "@auth-service",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "user"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I get all stored travel",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "get-service---travel-management-validation-with-get;send-get-to-validate-scheduled-travel-by-zone",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Send GET to validate scheduled travel by zone",
+        "tags": [
+          {
+            "name": "@travel-service",
+            "line": 1
+          },
+          {
+            "name": "@auth-service",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "user"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "zone",
+                      "Sul"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I define the zone",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

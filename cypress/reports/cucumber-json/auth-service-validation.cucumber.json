@@ -1,0 +1,185 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Auth Service - Auth validation",
+    "line": 4,
+    "id": "auth-service---auth-validation",
+    "tags": [
+      {
+        "name": "@auth-service",
+        "line": 2
+      },
+      {
+        "name": "@auth-service-page",
+        "line": 3
+      }
+    ],
+    "uri": "auth-service-validation.feature",
+    "elements": [
+      {
+        "id": "auth-service---auth-validation;generate-auth-for-admin",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Generate auth for admin",
+        "tags": [
+          {
+            "name": "@auth-service",
+            "line": 2
+          },
+          {
+            "name": "@auth-service-page",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "adm"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "token",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Should be returned the token",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 11,
+            "name": "A response with success from auth-service will return",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "auth-service---auth-validation;generate-auth-for-user",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Generate auth for user",
+        "tags": [
+          {
+            "name": "@auth-service",
+            "line": 2
+          },
+          {
+            "name": "@auth-service-page",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "role",
+                      "user"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I define the user role",
+            "result": {
+              "status": "passed",
+              "duration": 105000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "token",
+                      "true"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Should be returned the token",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "statusCode",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 19,
+            "name": "A response with success from auth-service will return",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
